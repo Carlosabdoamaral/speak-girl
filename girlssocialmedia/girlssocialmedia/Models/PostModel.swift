@@ -12,7 +12,6 @@ struct Post : Identifiable {
     var author : String // Username
     var title : String
     var content : String
-    var comments : [String]
     var likes : Int
     var reactions : [Int]
 }

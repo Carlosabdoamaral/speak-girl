@@ -91,7 +91,6 @@ struct ProfileView_Previews: PreviewProvider {
                         author: "amaralzaao",
                         title: "Título",
                         content: "Coments",
-                        comments: ["Conteúdo dahora"],
                         likes: 89,
                         reactions: [1,2,1,2,4]
                     ),
@@ -99,7 +98,6 @@ struct ProfileView_Previews: PreviewProvider {
                         author: "amaralzaao",
                         title: "Título",
                         content: "Coments",
-                        comments: ["Conteúdo dahora"],
                         likes: 89,
                         reactions: [1,2,1,2,4]
                     ),
@@ -107,7 +105,6 @@ struct ProfileView_Previews: PreviewProvider {
                         author: "amaralzaao",
                         title: "Título",
                         content: "Coments",
-                        comments: ["Conteúdo dahora"],
                         likes: 89,
                         reactions: [1,2,1,2,4]
                     ),
@@ -115,7 +112,6 @@ struct ProfileView_Previews: PreviewProvider {
                         author: "amaralzaao",
                         title: "Título",
                         content: "Coments",
-                        comments: ["Conteúdo dahora"],
                         likes: 89,
                         reactions: [1,2,1,2,4]
                     ),
@@ -123,7 +119,6 @@ struct ProfileView_Previews: PreviewProvider {
                         author: "amaralzaao",
                         title: "Título",
                         content: "Coments",
-                        comments: ["Conteúdo dahora"],
                         likes: 89,
                         reactions: [1,2,1,2,4]
                     ),
@@ -131,7 +126,6 @@ struct ProfileView_Previews: PreviewProvider {
                         author: "amaralzaao",
                         title: "Título",
                         content: "Coments",
-                        comments: ["Conteúdo dahora"],
                         likes: 89,
                         reactions: [1,2,1,2,4]
                     ),
@@ -139,7 +133,6 @@ struct ProfileView_Previews: PreviewProvider {
                         author: "amaralzaao",
                         title: "Título",
                         content: "Coments",
-                        comments: ["Conteúdo dahora"],
                         likes: 89,
                         reactions: [1,2,1,2,4]
                     )
