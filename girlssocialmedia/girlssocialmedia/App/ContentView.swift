@@ -16,10 +16,10 @@ struct ContentView: View {
                     Text("Menu")
                 }
             
-            ProfileView(user: userTemplate)
+            SettingsView()
                 .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Perfil")
+                    Image(systemName: "gear")
+                    Text("Configurações")
                 }
         }
     }

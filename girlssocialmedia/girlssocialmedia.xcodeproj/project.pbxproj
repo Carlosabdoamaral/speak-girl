@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		986D9626275B8CD800681C2A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986D9625275B8CD800681C2A /* SettingsView.swift */; };
 		98A974C6275AF16E0003798B /* BigPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C5275AF16E0003798B /* BigPostView.swift */; };
 		98A974C8275AFA830003798B /* TemplateUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C7275AFA830003798B /* TemplateUserData.swift */; };
 		98A974CA275B086F0003798B /* SetCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C9275B086F0003798B /* SetCommentView.swift */; };
@@ -27,7 +28,6 @@
 		98E6EDAE275981F1005A8B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E6EDAD275981F1005A8B2C /* Assets.xcassets */; };
 		98E6EDB1275981F1005A8B2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E6EDB0275981F1005A8B2C /* Preview Assets.xcassets */; };
 		98E6EDCA2759834E005A8B2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDC92759834E005A8B2C /* HomeView.swift */; };
-		98E6EDCC2759836F005A8B2C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDCB2759836F005A8B2C /* ProfileView.swift */; };
 		98E6EDCE2759845A005A8B2C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDCD2759845A005A8B2C /* UserModel.swift */; };
 		98E6EDD027598561005A8B2C /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDCF27598561005A8B2C /* PostModel.swift */; };
 		98E6EDD227598B3A005A8B2C /* SmallPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD127598B39005A8B2C /* SmallPostView.swift */; };
@@ -79,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		986D9625275B8CD800681C2A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		98A974C5275AF16E0003798B /* BigPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigPostView.swift; sourceTree = "<group>"; };
 		98A974C7275AFA830003798B /* TemplateUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateUserData.swift; sourceTree = "<group>"; };
 		98A974C9275B086F0003798B /* SetCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCommentView.swift; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		98E6EDB2275981F1005A8B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98E6EDB3275981F1005A8B2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		98E6EDC92759834E005A8B2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		98E6EDCB2759836F005A8B2C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		98E6EDCD2759845A005A8B2C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		98E6EDCF27598561005A8B2C /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		98E6EDD127598B39005A8B2C /* SmallPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPostView.swift; sourceTree = "<group>"; };
@@ -221,8 +221,8 @@
 				98E6EDC92759834E005A8B2C /* HomeView.swift */,
 				98A974C9275B086F0003798B /* SetCommentView.swift */,
 				98A974CB275B090A0003798B /* PostDetailView.swift */,
-				98E6EDCB2759836F005A8B2C /* ProfileView.swift */,
 				98A974CD275B102B0003798B /* PublicProfileView.swift */,
+				986D9625275B8CD800681C2A /* SettingsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -386,7 +386,6 @@
 			files = (
 				98A974CC275B090A0003798B /* PostDetailView.swift in Sources */,
 				98A974CE275B102B0003798B /* PublicProfileView.swift in Sources */,
-				98E6EDCC2759836F005A8B2C /* ProfileView.swift in Sources */,
 				98E6EDD027598561005A8B2C /* PostModel.swift in Sources */,
 				98A974C8275AFA830003798B /* TemplateUserData.swift in Sources */,
 				98E6EDCA2759834E005A8B2C /* HomeView.swift in Sources */,
@@ -396,6 +395,7 @@
 				98E6EDD227598B3A005A8B2C /* SmallPostView.swift in Sources */,
 				98E6ED89275981E7005A8B2C /* girlssocialmediaApp.swift in Sources */,
 				98A974C6275AF16E0003798B /* BigPostView.swift in Sources */,
+				986D9626275B8CD800681C2A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

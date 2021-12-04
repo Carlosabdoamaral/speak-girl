@@ -14,10 +14,15 @@ struct SetCommentView: View {
         VStack {
             Spacer(minLength: 20)
             GroupBox {
+                Text("Comentar")
+                    .font(.largeTitle)
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
                 TextField("Comenatário", text: $comment)
                     .frame(height: 50)
                     .cornerRadius(10)
             }
+            .frame(height: 400)
             Spacer()
         }
         .padding()
