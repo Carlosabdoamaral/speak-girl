@@ -15,13 +15,17 @@ struct HomePostView: View {
                     .frame(width: 4)
                     .foregroundColor(Color.pink)
                 
-                Text("Teste la la la")
-                    .lineLimit(1)
-                    .padding(.leading, 5)
+                VStack(alignment:.leading) {
+                    Text("Teste la la la")
+                        .lineLimit(1)
+                    Text("Author")
+                        .font(.subheadline)
+                        .fontWeight(.ultraLight)
+                }
                 Spacer()
             }
         }
-        .frame(height: 40)
+        .frame(height: 60)
     }
 }
 

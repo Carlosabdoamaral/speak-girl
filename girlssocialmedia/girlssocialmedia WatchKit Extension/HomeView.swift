@@ -10,8 +10,8 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            List {
-                ForEach(0..<5) {post in
+            ScrollView(showsIndicators:false) {
+                ForEach(0..<10) {post in
                     HomePostView()
                 }
             }

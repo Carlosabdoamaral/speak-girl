@@ -9,15 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-            Text("Oi")
-            Spacer()
-            Image(systemName: "heart.fill")
-        }
-        .foregroundColor(Color.pink)
-        .padding()
-        .background(Color.secondary)
-        .cornerRadius(10)
+        HomeView()
     }
 }
 
