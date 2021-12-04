@@ -13,7 +13,7 @@ struct SmallPostView: View {
             
         }
         .frame(width: 100, height: 100, alignment: .center)
-        .background(Color.accentColor)
+        .background(Color.pink)
         .cornerRadius(10)
     }
 }

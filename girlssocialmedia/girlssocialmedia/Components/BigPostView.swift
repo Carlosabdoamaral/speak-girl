@@ -91,7 +91,7 @@ struct BigPostView: View {
             }
         }
         .padding()
-        .frame(width: 350, height: 450)
+        .frame(width: 350, height: 400)
         .background(LinearGradient(colors: [Color.pink, Color.red], startPoint: .topLeading, endPoint: .bottomTrailing))
         .cornerRadius(15)
     }

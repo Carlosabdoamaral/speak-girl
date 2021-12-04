@@ -10,20 +10,17 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            List {
-                HStack {
-                    Spacer()
-                    VStack(alignment: .center) {
-                        ForEach(0..<5) {post in
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .center) {
+                    ForEach(0..<5) {post in
+                        HStack {
+                            Spacer()
                             BigPostView()
+                            Spacer()
                         }
                     }
-                    Spacer()
                 }
             }
-            .padding(.horizontal)
-            .padding(.top, 20)
-            .listStyle(PlainListStyle())
             .navigationBarTitle("Menu")
         }
     }

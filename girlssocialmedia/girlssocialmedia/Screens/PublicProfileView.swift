@@ -37,6 +37,7 @@ struct PublicProfileView: View {
                         Spacer()
                     }
                 }
+                .padding(.top, 40)
                 .foregroundColor(Color.white)
                 .frame(height: 200)
                 .background(LinearGradient(colors: [Color.pink, Color.red], startPoint: .topLeading, endPoint: .bottomTrailing))

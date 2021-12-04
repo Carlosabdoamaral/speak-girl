@@ -12,7 +12,9 @@ struct HomeView: View {
         NavigationView {
             ScrollView(showsIndicators:false) {
                 ForEach(0..<10) {post in
-                    HomePostView()
+                    HStack {
+                        HomePostView()
+                    }
                 }
             }
             .navigationBarTitle("Menu")
