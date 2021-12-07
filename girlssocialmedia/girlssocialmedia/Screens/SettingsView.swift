@@ -13,7 +13,6 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
-                
                 NavigationLink(destination: PublicProfileView()) {
                     GroupBox {
                         HStack {
@@ -25,21 +24,14 @@ struct SettingsView: View {
                             }
                             .foregroundColor(Color.white)
                             Spacer()
-                            
                         }
                     }
                 }
-                
-                GroupBox {
-                    Text("Privacidade")
-                    Toggle("Criptografar dados", isOn: $wantToCript)
-                    
-                }
+                .padding(.horizontal)
                 
                 Spacer()
             }
-            .padding(.horizontal)
-            .padding(.vertical, 20)
+            .background(Color("ColorWine"))
             .navigationTitle("Configurações")
         }
     }

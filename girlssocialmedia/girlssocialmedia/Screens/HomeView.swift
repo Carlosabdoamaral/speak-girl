@@ -10,17 +10,23 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .center) {
-                    ForEach(0..<5) {post in
-                        HStack {
-                            Spacer()
-                            BigPostView()
-                            Spacer()
+            VStack {
+                ScrollView(.vertical) {
+                    ForEach(0..<5) { i in
+                        
+                        if i == 0 {
+                            Divider()
+                            PostView()
+                            Divider()
+                        } else {
+                            PostView()
+                            Divider()
                         }
                     }
                 }
+                
             }
+            .background(Color("ColorWine"))
             .navigationBarTitle("Menu")
         }
     }

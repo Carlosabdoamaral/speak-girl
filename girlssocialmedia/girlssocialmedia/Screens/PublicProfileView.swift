@@ -9,92 +9,30 @@ import SwiftUI
 
 struct PublicProfileView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                ZStack {
-                    HStack {
-                        Spacer()
-                        VStack {
-                            Text("Username")
-                                .font(.largeTitle)
-                                .fontWeight(.heavy)
-                            
-                            HStack {
-                                HStack {
-                                    Image(systemName: "person.fill")
-                                    Text("2.5K")
-                                }
-                                .padding(.horizontal)
-                                
-                                HStack {
-                                    Image(systemName: "heart.fill")
-                                    Text("46.4K")
-                                }
-                                .padding(.horizontal)
-                                
-                            }
-                        }
-                        Spacer()
-                    }
-                }
-                .padding(.top, 40)
-                .foregroundColor(Color.white)
-                .frame(height: 200)
-                .background(LinearGradient(colors: [Color.pink, Color.red], startPoint: .topLeading, endPoint: .bottomTrailing))
-                Spacer()
-                
-                ScrollView(.vertical) {
-                    VStack {
-                        GroupBox {
-                            HStack {
-                                Spacer()
-                                Text("Bio")
-                                Spacer()
-                            }
-                        }
-                        
-                        GroupBox {
-                            HStack {
-                                Text("Instagram")
-                                Spacer()
-                            }
-                            
-                            Divider()
-                            
-                            HStack {
-                                Text("Twitter")
-                                Spacer()
-                            }
-                            
-                            Divider()
-                            
-                            HStack {
-                                Text("Instagram")
-                                Spacer()
-                            }
-                        }
-                        
-                        GroupBox {
-                            
-                            ForEach(0..<15) {i in
-                                HStack {
-                                    Text("Post #\(i)")
-                                    Spacer()
-                                }
-                                Divider()
-                            }
-                            
-                        }
-                        
-                        Spacer()
-                    }
-                    .padding()
-                    
-                }
-                
-            }
-            .edgesIgnoringSafeArea(.all)
+        ScrollView(.vertical, showsIndicators: false) {
+            
         }
+        .safeAreaInset(edge: .top) {
+            VStack(alignment: .leading, spacing: 8) {
+                HStack() {
+                    Text("Username")
+                        .font(.largeTitle.weight(.bold))
+                    Spacer()
+                    Button(action: {}) {
+                        Image(systemName: "...")
+                    }
+                }
+                Text("With safeAreaInset you can create your own custom nav bar.")
+                    .font(.caption)
+            }
+            .padding()
+            .background(LinearGradient(colors: [Color.pink.opacity(0.5), Color.purple.opacity(0.5)],
+                                       startPoint: .topLeading, endPoint: .bottomTrailing)
+                            .overlay(.ultraThinMaterial)
+            )
+        }
+        .navigationBarHidden(true)
+        .tint(.orange)
     }
 }
 

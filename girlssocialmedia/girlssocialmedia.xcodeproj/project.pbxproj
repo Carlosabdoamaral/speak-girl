@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		986D9626275B8CD800681C2A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986D9625275B8CD800681C2A /* SettingsView.swift */; };
-		98A974C6275AF16E0003798B /* BigPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C5275AF16E0003798B /* BigPostView.swift */; };
+		98773A7E275EDDC2003D582B /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98773A7D275EDDC2003D582B /* PostView.swift */; };
 		98A974C8275AFA830003798B /* TemplateUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C7275AFA830003798B /* TemplateUserData.swift */; };
 		98A974CA275B086F0003798B /* SetCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C9275B086F0003798B /* SetCommentView.swift */; };
-		98A974CC275B090A0003798B /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974CB275B090A0003798B /* PostDetailView.swift */; };
 		98A974CE275B102B0003798B /* PublicProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974CD275B102B0003798B /* PublicProfileView.swift */; };
 		98E6ED89275981E7005A8B2C /* girlssocialmediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6ED88275981E7005A8B2C /* girlssocialmediaApp.swift */; };
 		98E6ED8B275981E7005A8B2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6ED8A275981E7005A8B2C /* ContentView.swift */; };
@@ -30,7 +29,6 @@
 		98E6EDCA2759834E005A8B2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDC92759834E005A8B2C /* HomeView.swift */; };
 		98E6EDCE2759845A005A8B2C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDCD2759845A005A8B2C /* UserModel.swift */; };
 		98E6EDD027598561005A8B2C /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDCF27598561005A8B2C /* PostModel.swift */; };
-		98E6EDD227598B3A005A8B2C /* SmallPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD127598B39005A8B2C /* SmallPostView.swift */; };
 		98E6EDD62759AEF3005A8B2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD52759AEF3005A8B2C /* HomeView.swift */; };
 		98E6EDD82759B2CE005A8B2C /* HomePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD72759B2CE005A8B2C /* HomePostView.swift */; };
 		98E6EDDA2759B457005A8B2C /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD92759B457005A8B2C /* PostDetail.swift */; };
@@ -80,10 +78,9 @@
 
 /* Begin PBXFileReference section */
 		986D9625275B8CD800681C2A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		98A974C5275AF16E0003798B /* BigPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigPostView.swift; sourceTree = "<group>"; };
+		98773A7D275EDDC2003D582B /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		98A974C7275AFA830003798B /* TemplateUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateUserData.swift; sourceTree = "<group>"; };
 		98A974C9275B086F0003798B /* SetCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCommentView.swift; sourceTree = "<group>"; };
-		98A974CB275B090A0003798B /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		98A974CD275B102B0003798B /* PublicProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProfileView.swift; sourceTree = "<group>"; };
 		98E6ED85275981E7005A8B2C /* girlssocialmedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = girlssocialmedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E6ED88275981E7005A8B2C /* girlssocialmediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = girlssocialmediaApp.swift; sourceTree = "<group>"; };
@@ -105,7 +102,6 @@
 		98E6EDC92759834E005A8B2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		98E6EDCD2759845A005A8B2C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		98E6EDCF27598561005A8B2C /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
-		98E6EDD127598B39005A8B2C /* SmallPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPostView.swift; sourceTree = "<group>"; };
 		98E6EDD52759AEF3005A8B2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		98E6EDD72759B2CE005A8B2C /* HomePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostView.swift; sourceTree = "<group>"; };
 		98E6EDD92759B457005A8B2C /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
@@ -220,7 +216,6 @@
 			children = (
 				98E6EDC92759834E005A8B2C /* HomeView.swift */,
 				98A974C9275B086F0003798B /* SetCommentView.swift */,
-				98A974CB275B090A0003798B /* PostDetailView.swift */,
 				98A974CD275B102B0003798B /* PublicProfileView.swift */,
 				986D9625275B8CD800681C2A /* SettingsView.swift */,
 			);
@@ -230,8 +225,7 @@
 		98E6EDC3275982F9005A8B2C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				98E6EDD127598B39005A8B2C /* SmallPostView.swift */,
-				98A974C5275AF16E0003798B /* BigPostView.swift */,
+				98773A7D275EDDC2003D582B /* PostView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -384,7 +378,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98A974CC275B090A0003798B /* PostDetailView.swift in Sources */,
 				98A974CE275B102B0003798B /* PublicProfileView.swift in Sources */,
 				98E6EDD027598561005A8B2C /* PostModel.swift in Sources */,
 				98A974C8275AFA830003798B /* TemplateUserData.swift in Sources */,
@@ -392,9 +385,8 @@
 				98E6ED8B275981E7005A8B2C /* ContentView.swift in Sources */,
 				98A974CA275B086F0003798B /* SetCommentView.swift in Sources */,
 				98E6EDCE2759845A005A8B2C /* UserModel.swift in Sources */,
-				98E6EDD227598B3A005A8B2C /* SmallPostView.swift in Sources */,
 				98E6ED89275981E7005A8B2C /* girlssocialmediaApp.swift in Sources */,
-				98A974C6275AF16E0003798B /* BigPostView.swift in Sources */,
+				98773A7E275EDDC2003D582B /* PostView.swift in Sources */,
 				986D9626275B8CD800681C2A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
