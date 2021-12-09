@@ -8,26 +8,29 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var posts : [post] = []
+    
     var body: some View {
         NavigationView {
-            VStack {
-                ScrollView(.vertical) {
-                    ForEach(0..<5) { i in
+            VStack(alignment: .leading) {
+                ScrollView(.vertical, showsIndicators: false) {
+                    ForEach(posts) { post in
                         
-                        if i == 0 {
-                            Divider()
-                            PostView()
-                            Divider()
-                        } else {
-                            PostView()
-                            Divider()
+                        HStack {
+                            PostView(postContent: post)
+                            Spacer()
                         }
+                        Divider()
                     }
                 }
-                
             }
             .background(Color("ColorWine"))
             .navigationBarTitle("Menu")
+            .onAppear {
+                TemplateRequest().getAllPosts { (posts) in
+                    self.posts = posts
+                }
+            }
         }
     }
 }

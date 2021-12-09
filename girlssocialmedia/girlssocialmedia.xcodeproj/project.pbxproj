@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		986D9626275B8CD800681C2A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986D9625275B8CD800681C2A /* SettingsView.swift */; };
 		98773A7E275EDDC2003D582B /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98773A7D275EDDC2003D582B /* PostView.swift */; };
-		98A974C8275AFA830003798B /* TemplateUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C7275AFA830003798B /* TemplateUserData.swift */; };
 		98A974CA275B086F0003798B /* SetCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C9275B086F0003798B /* SetCommentView.swift */; };
 		98A974CE275B102B0003798B /* PublicProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974CD275B102B0003798B /* PublicProfileView.swift */; };
+		98DE6A2527617546006C6EA8 /* TemplateRequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE6A2427617546006C6EA8 /* TemplateRequestApi.swift */; };
+		98DE6A2727617FD7006C6EA8 /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE6A2627617FD7006C6EA8 /* PostDetailsView.swift */; };
 		98E6ED89275981E7005A8B2C /* girlssocialmediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6ED88275981E7005A8B2C /* girlssocialmediaApp.swift */; };
 		98E6ED8B275981E7005A8B2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6ED8A275981E7005A8B2C /* ContentView.swift */; };
 		98E6ED8D275981EB005A8B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E6ED8C275981EB005A8B2C /* Assets.xcassets */; };
@@ -32,6 +33,8 @@
 		98E6EDD62759AEF3005A8B2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD52759AEF3005A8B2C /* HomeView.swift */; };
 		98E6EDD82759B2CE005A8B2C /* HomePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD72759B2CE005A8B2C /* HomePostView.swift */; };
 		98E6EDDA2759B457005A8B2C /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD92759B457005A8B2C /* PostDetail.swift */; };
+		98F667F327616D36006ADFC6 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F667F227616D36006ADFC6 /* UserData.swift */; };
+		98F667F727616F0D006ADFC6 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F667F627616F0D006ADFC6 /* UsersListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,9 +82,10 @@
 /* Begin PBXFileReference section */
 		986D9625275B8CD800681C2A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		98773A7D275EDDC2003D582B /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
-		98A974C7275AFA830003798B /* TemplateUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateUserData.swift; sourceTree = "<group>"; };
 		98A974C9275B086F0003798B /* SetCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCommentView.swift; sourceTree = "<group>"; };
 		98A974CD275B102B0003798B /* PublicProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProfileView.swift; sourceTree = "<group>"; };
+		98DE6A2427617546006C6EA8 /* TemplateRequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateRequestApi.swift; sourceTree = "<group>"; };
+		98DE6A2627617FD7006C6EA8 /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
 		98E6ED85275981E7005A8B2C /* girlssocialmedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = girlssocialmedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E6ED88275981E7005A8B2C /* girlssocialmediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = girlssocialmediaApp.swift; sourceTree = "<group>"; };
 		98E6ED8A275981E7005A8B2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		98E6EDD52759AEF3005A8B2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		98E6EDD72759B2CE005A8B2C /* HomePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostView.swift; sourceTree = "<group>"; };
 		98E6EDD92759B457005A8B2C /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
+		98F667F227616D36006ADFC6 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		98F667F627616F0D006ADFC6 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +224,8 @@
 				98A974C9275B086F0003798B /* SetCommentView.swift */,
 				98A974CD275B102B0003798B /* PublicProfileView.swift */,
 				986D9625275B8CD800681C2A /* SettingsView.swift */,
+				98F667F627616F0D006ADFC6 /* UsersListView.swift */,
+				98DE6A2627617FD7006C6EA8 /* PostDetailsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -242,7 +250,8 @@
 		98E6EDC527598302005A8B2C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				98A974C7275AFA830003798B /* TemplateUserData.swift */,
+				98F667F227616D36006ADFC6 /* UserData.swift */,
+				98DE6A2427617546006C6EA8 /* TemplateRequestApi.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -380,11 +389,14 @@
 			files = (
 				98A974CE275B102B0003798B /* PublicProfileView.swift in Sources */,
 				98E6EDD027598561005A8B2C /* PostModel.swift in Sources */,
-				98A974C8275AFA830003798B /* TemplateUserData.swift in Sources */,
 				98E6EDCA2759834E005A8B2C /* HomeView.swift in Sources */,
 				98E6ED8B275981E7005A8B2C /* ContentView.swift in Sources */,
 				98A974CA275B086F0003798B /* SetCommentView.swift in Sources */,
+				98DE6A2727617FD7006C6EA8 /* PostDetailsView.swift in Sources */,
+				98F667F327616D36006ADFC6 /* UserData.swift in Sources */,
 				98E6EDCE2759845A005A8B2C /* UserModel.swift in Sources */,
+				98F667F727616F0D006ADFC6 /* UsersListView.swift in Sources */,
+				98DE6A2527617546006C6EA8 /* TemplateRequestApi.swift in Sources */,
 				98E6ED89275981E7005A8B2C /* girlssocialmediaApp.swift in Sources */,
 				98773A7E275EDDC2003D582B /* PostView.swift in Sources */,
 				986D9626275B8CD800681C2A /* SettingsView.swift in Sources */,

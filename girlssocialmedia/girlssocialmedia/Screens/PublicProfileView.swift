@@ -8,31 +8,34 @@
 import SwiftUI
 
 struct PublicProfileView: View {
+    
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            
-        }
-        .safeAreaInset(edge: .top) {
-            VStack(alignment: .leading, spacing: 8) {
-                HStack() {
-                    Text("Username")
-                        .font(.largeTitle.weight(.bold))
-                    Spacer()
-                    Button(action: {}) {
-                        Image(systemName: "...")
-                    }
-                }
-                Text("With safeAreaInset you can create your own custom nav bar.")
-                    .font(.caption)
+        VStack {
+            ScrollView(.vertical, showsIndicators: false) {
+                
             }
-            .padding()
-            .background(LinearGradient(colors: [Color.pink.opacity(0.5), Color.purple.opacity(0.5)],
-                                       startPoint: .topLeading, endPoint: .bottomTrailing)
-                            .overlay(.ultraThinMaterial)
-            )
+            .safeAreaInset(edge: .top) {
+                VStack(alignment: .leading, spacing: 8) {
+                    HStack() {
+                        Text("Username")
+                            .font(.largeTitle.weight(.bold))
+                        Spacer()
+                        Button(action: {}) {
+                            Image(systemName: "...")
+                        }
+                    }
+                    Text("With safeAreaInset you can create your own custom nav bar.")
+                        .font(.caption)
+                }
+                .padding()
+                .background(LinearGradient(colors: [Color.pink.opacity(0.5), Color.purple.opacity(0.5)],
+                                           startPoint: .topLeading, endPoint: .bottomTrailing)
+                                .overlay(.ultraThinMaterial)
+                )
+            }
+            .navigationBarHidden(true)
+            .tint(.orange)
         }
-        .navigationBarHidden(true)
-        .tint(.orange)
     }
 }
 

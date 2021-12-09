@@ -21,6 +21,12 @@ struct ContentView: View {
                     Image(systemName: "gear")
                     Text("Configurações")
                 }
+            
+            UsersListView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Usuários")
+                }
         }
     }
 }

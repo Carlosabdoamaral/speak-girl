@@ -17,9 +17,9 @@ struct SettingsView: View {
                     GroupBox {
                         HStack {
                             VStack(alignment:.leading, spacing: 5) {
-                                Text("\(userTemplate.username.capitalized)")
+                                Text("Username")
                                     .font(.title3)
-                                Text("\(userTemplate.email)")
+                                Text("email")
                                     .font(.subheadline)
                             }
                             .foregroundColor(Color.white)
