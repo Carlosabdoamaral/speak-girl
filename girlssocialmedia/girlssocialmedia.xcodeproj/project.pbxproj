@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		986D9626275B8CD800681C2A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986D9625275B8CD800681C2A /* SettingsView.swift */; };
-		98773A7E275EDDC2003D582B /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98773A7D275EDDC2003D582B /* PostView.swift */; };
-		98A974CA275B086F0003798B /* SetCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974C9275B086F0003798B /* SetCommentView.swift */; };
-		98A974CE275B102B0003798B /* PublicProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A974CD275B102B0003798B /* PublicProfileView.swift */; };
 		98DE6A2527617546006C6EA8 /* TemplateRequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE6A2427617546006C6EA8 /* TemplateRequestApi.swift */; };
-		98DE6A2727617FD7006C6EA8 /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DE6A2627617FD7006C6EA8 /* PostDetailsView.swift */; };
 		98E6ED89275981E7005A8B2C /* girlssocialmediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6ED88275981E7005A8B2C /* girlssocialmediaApp.swift */; };
 		98E6ED8B275981E7005A8B2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6ED8A275981E7005A8B2C /* ContentView.swift */; };
 		98E6ED8D275981EB005A8B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E6ED8C275981EB005A8B2C /* Assets.xcassets */; };
@@ -27,14 +22,16 @@
 		98E6EDAC275981EE005A8B2C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDAB275981EE005A8B2C /* ComplicationController.swift */; };
 		98E6EDAE275981F1005A8B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E6EDAD275981F1005A8B2C /* Assets.xcassets */; };
 		98E6EDB1275981F1005A8B2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E6EDB0275981F1005A8B2C /* Preview Assets.xcassets */; };
-		98E6EDCA2759834E005A8B2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDC92759834E005A8B2C /* HomeView.swift */; };
 		98E6EDCE2759845A005A8B2C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDCD2759845A005A8B2C /* UserModel.swift */; };
 		98E6EDD027598561005A8B2C /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDCF27598561005A8B2C /* PostModel.swift */; };
 		98E6EDD62759AEF3005A8B2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD52759AEF3005A8B2C /* HomeView.swift */; };
 		98E6EDD82759B2CE005A8B2C /* HomePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD72759B2CE005A8B2C /* HomePostView.swift */; };
 		98E6EDDA2759B457005A8B2C /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6EDD92759B457005A8B2C /* PostDetail.swift */; };
 		98F667F327616D36006ADFC6 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F667F227616D36006ADFC6 /* UserData.swift */; };
-		98F667F727616F0D006ADFC6 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F667F627616F0D006ADFC6 /* UsersListView.swift */; };
+		98F9FC77276433600021E030 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9FC76276433600021E030 /* SignInView.swift */; };
+		98F9FC79276447E10021E030 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9FC78276447E10021E030 /* SignUpView.swift */; };
+		98F9FC7B276455880021E030 /* ManualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9FC7A276455880021E030 /* ManualView.swift */; };
+		98F9FC7D276455F60021E030 /* ManualTabViewTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9FC7C276455F60021E030 /* ManualTabViewTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		986D9625275B8CD800681C2A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		98773A7D275EDDC2003D582B /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
-		98A974C9275B086F0003798B /* SetCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCommentView.swift; sourceTree = "<group>"; };
-		98A974CD275B102B0003798B /* PublicProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProfileView.swift; sourceTree = "<group>"; };
 		98DE6A2427617546006C6EA8 /* TemplateRequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateRequestApi.swift; sourceTree = "<group>"; };
-		98DE6A2627617FD7006C6EA8 /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
 		98E6ED85275981E7005A8B2C /* girlssocialmedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = girlssocialmedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E6ED88275981E7005A8B2C /* girlssocialmediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = girlssocialmediaApp.swift; sourceTree = "<group>"; };
 		98E6ED8A275981E7005A8B2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,14 +95,17 @@
 		98E6EDB0275981F1005A8B2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98E6EDB2275981F1005A8B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98E6EDB3275981F1005A8B2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		98E6EDC92759834E005A8B2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		98E6EDCD2759845A005A8B2C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		98E6EDCF27598561005A8B2C /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		98E6EDD52759AEF3005A8B2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		98E6EDD72759B2CE005A8B2C /* HomePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostView.swift; sourceTree = "<group>"; };
 		98E6EDD92759B457005A8B2C /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
 		98F667F227616D36006ADFC6 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		98F667F627616F0D006ADFC6 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		98F9FC75276430960021E030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		98F9FC76276433600021E030 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		98F9FC78276447E10021E030 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		98F9FC7A276455880021E030 /* ManualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualView.swift; sourceTree = "<group>"; };
+		98F9FC7C276455F60021E030 /* ManualTabViewTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTabViewTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +149,7 @@
 		98E6ED87275981E7005A8B2C /* girlssocialmedia */ = {
 			isa = PBXGroup;
 			children = (
+				98F9FC75276430960021E030 /* Info.plist */,
 				98E6EDC527598302005A8B2C /* Data */,
 				98E6EDC4275982FD005A8B2C /* Models */,
 				98E6EDC3275982F9005A8B2C /* Components */,
@@ -220,12 +216,9 @@
 		98E6EDC2275982F4005A8B2C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				98E6EDC92759834E005A8B2C /* HomeView.swift */,
-				98A974C9275B086F0003798B /* SetCommentView.swift */,
-				98A974CD275B102B0003798B /* PublicProfileView.swift */,
-				986D9625275B8CD800681C2A /* SettingsView.swift */,
-				98F667F627616F0D006ADFC6 /* UsersListView.swift */,
-				98DE6A2627617FD7006C6EA8 /* PostDetailsView.swift */,
+				98F9FC76276433600021E030 /* SignInView.swift */,
+				98F9FC78276447E10021E030 /* SignUpView.swift */,
+				98F9FC7A276455880021E030 /* ManualView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -233,7 +226,7 @@
 		98E6EDC3275982F9005A8B2C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				98773A7D275EDDC2003D582B /* PostView.swift */,
+				98F9FC7C276455F60021E030 /* ManualTabViewTemplate.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -387,19 +380,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98A974CE275B102B0003798B /* PublicProfileView.swift in Sources */,
 				98E6EDD027598561005A8B2C /* PostModel.swift in Sources */,
-				98E6EDCA2759834E005A8B2C /* HomeView.swift in Sources */,
+				98F9FC77276433600021E030 /* SignInView.swift in Sources */,
+				98F9FC7B276455880021E030 /* ManualView.swift in Sources */,
 				98E6ED8B275981E7005A8B2C /* ContentView.swift in Sources */,
-				98A974CA275B086F0003798B /* SetCommentView.swift in Sources */,
-				98DE6A2727617FD7006C6EA8 /* PostDetailsView.swift in Sources */,
 				98F667F327616D36006ADFC6 /* UserData.swift in Sources */,
+				98F9FC79276447E10021E030 /* SignUpView.swift in Sources */,
+				98F9FC7D276455F60021E030 /* ManualTabViewTemplate.swift in Sources */,
 				98E6EDCE2759845A005A8B2C /* UserModel.swift in Sources */,
-				98F667F727616F0D006ADFC6 /* UsersListView.swift in Sources */,
 				98DE6A2527617546006C6EA8 /* TemplateRequestApi.swift in Sources */,
 				98E6ED89275981E7005A8B2C /* girlssocialmediaApp.swift in Sources */,
-				98773A7E275EDDC2003D582B /* PostView.swift in Sources */,
-				986D9626275B8CD800681C2A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,9 +664,9 @@
 				DEVELOPMENT_TEAM = 9Z86N6X4FM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = girlssocialmedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
@@ -706,9 +696,9 @@
 				DEVELOPMENT_TEAM = 9Z86N6X4FM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = girlssocialmedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
