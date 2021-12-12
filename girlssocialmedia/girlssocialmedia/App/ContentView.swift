@@ -36,6 +36,7 @@ struct ContentView: View {
                         Image(systemName: "gear")
                         Text("Ajustes")
                     }
+                
             }
         } else {
             SignInView()

@@ -18,13 +18,12 @@ struct ChatAddContactView: View {
                 GroupBox {
                     TextField("Pesquisar...", text: $searchText)
                 }
-                
                 GroupBox {
                     ScrollView(.vertical) {
                         VStack {
                             ForEach(0..<30) {k in
                                 HStack {
-                                    Text("aaa")
+                                    Text("Username")
                                     Spacer()
                                 }
                                 Divider()
