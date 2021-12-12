@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("isLogged") var isLogged : Bool = false
+    
     var body: some View {
-        Text("Hello World")
+        if isLogged {
+            TabView() {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Menu")
+                    }
+                
+                NewPostView()
+                    .tabItem {
+                        Image(systemName: "plus")
+                        Text("Criar")
+                    }
+                
+                CommunityListView()
+                    .tabItem {
+                        Image(systemName: "person.3.sequence.fill")
+                        Text("Nós")
+                    }
+                
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "gear")
+                        Text("Ajustes")
+                    }
+            }
+        } else {
+            SignInView()
+        }
+
     }
 }
 

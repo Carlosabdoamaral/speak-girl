@@ -8,11 +8,67 @@
 import SwiftUI
 
 struct SignUpView: View {
-    
-    @State var avatar : [String] = ["person.fill", "star.fill", "person.fill", "star.fill", "person.fill", "star.fill", "person.fill", "star.fill", "person.fill", "star.fill"]
+    @State var avatar : [String] = ["person.fill", "person.wave.2.fill", "eyes.inverse", "face.smiling.fill", "heart.fill", "ear.fill", "star.fill", "sparkles"]
     @State var i : Int = 0
-    @State private var username : String = ""
-    @State private var icon : String = ""
+    
+    //USER INFOS
+    @State var username : String = ""
+    @State var name : String = ""
+    @State var email : String = ""
+    @State var password : String = ""
+    @State var icon : String = ""
+    
+    // ERROR STATE
+    @State var usernameIsValid : Bool = true
+    @State var nameIsValid : Bool = true
+    @State var emailIsValid : Bool = true
+    @State var passwordIsValid : Bool = true
+    
+    // ERROR LABEL
+    @State var usernameErrorLabel : String = ""
+    @State var nameErrorLabel : String = ""
+    @State var emailErrorLabel : String = ""
+    @State var passwordErrorLabel : String = ""
+    
+    //FUNCTIONS
+    func validateInputs() {
+        
+        //USERNAME
+        if username.isEmpty {
+            usernameIsValid = false
+            usernameErrorLabel = "Voce deve informar um nome de usuário"
+        } else {
+            usernameIsValid = true
+            usernameErrorLabel = ""
+        }
+        
+        //NAME
+        if name.isEmpty {
+            nameIsValid = false
+            nameErrorLabel = "Voce deve informar o seu nome"
+        } else {
+            nameIsValid = true
+            nameErrorLabel = ""
+        }
+        
+        //EMAIL
+        if email.isEmpty {
+            emailIsValid = false
+            emailErrorLabel = "Voce deve informar o seu email"
+        } else {
+            emailIsValid = true
+            emailErrorLabel = ""
+        }
+        
+        //PASSWORD
+        if password.isEmpty {
+            passwordIsValid = false
+            passwordErrorLabel = "Voce deve informar uma senha"
+        } else {
+            passwordIsValid = true
+            passwordErrorLabel = ""
+        }
+    }
     
     var body: some View {
         HStack { Spacer()
@@ -23,7 +79,7 @@ struct SignUpView: View {
                 Section {
                     ZStack {
                         Circle()
-                            .foregroundColor(Color("ColorNude"))
+                            .foregroundColor(Color.white)
                         Image(systemName: "\(avatar[i])")
                             .resizable()
                             .scaledToFit()
@@ -41,20 +97,77 @@ struct SignUpView: View {
                                 self.i = i + 1
                             }
                         }
-                    
-                    Text("\(username)")
-
                 }
                 
                 Section {
                     GroupBox {
-                        TextField("Nome de usuário", text: $username)
-                        Divider()
-                        Text("aaa")
+                        TextField("Nome de usuário *", text: $username)
+                        
+                        if !usernameIsValid {
+                            HStack {
+                                Text("\(usernameErrorLabel)")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.red)
+                                Spacer()
+                            }
+                        } else {}
+                    }
+                    
+                    GroupBox {
+                        TextField("Seu nome e sobrenome *", text: $name)
+                        
+                        if !nameIsValid {
+                            HStack {
+                                Text("\(nameErrorLabel)")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.red)
+                                Spacer()
+                            }
+                        } else {}
+                    }
+                    
+                    GroupBox {
+                        TextField("Seu e-mail *", text: $email)
+                        
+                        if !emailIsValid {
+                            HStack {
+                                Text("\(emailErrorLabel)")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.red)
+                                Spacer()
+                            }
+                        } else {}
+                    }
+                    
+                    GroupBox {
+                        SecureField("Sua senha *", text: $password)
+                        
+                        if !passwordIsValid {
+                            HStack {
+                                Text("\(passwordErrorLabel)")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.red)
+                                Spacer()
+                            }
+                        } else {}
                     }
                 }
                 
-            Spacer()}
+                Spacer()
+                
+                Section {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                        HStack {
+                            Text("Cadastrar-se")
+                                .foregroundColor(Color("ColorWine"))
+                                .font(.headline)
+                        }
+                    }
+                    .frame(height: 50)
+                    .onTapGesture {validateInputs()}
+                }
+            }
             Spacer()
         }
         .background(LinearGradient(colors: [Color("ColorWine"), Color.black], startPoint: .topLeading, endPoint: .bottomTrailing))

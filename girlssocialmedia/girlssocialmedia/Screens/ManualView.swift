@@ -12,15 +12,13 @@ struct ManualView: View {
     
     var body: some View {
         TabView() {
-            ManualTabViewTemplate()
-            
-            ManualTabViewTemplate()
-            
-            ManualTabViewTemplate()
+            ForEach(0..<5) { i in
+                Text("aaaaa")
+            }
         }
         .edgesIgnoringSafeArea(.all)
         .tabViewStyle(PageTabViewStyle())
-        .background(LinearGradient(colors: [Color("ColorWine"), Color.black], startPoint: .topLeading, endPoint: .bottomTrailing))
+        .background(LinearGradient(colors: [Color("ColorWine").opacity(1), Color.black], startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
 

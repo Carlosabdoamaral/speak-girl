@@ -15,6 +15,9 @@ struct SignInView: View {
     @State var errorLabel : String = ""
     //Ops... não encontramos um usuário com esta combinação
     
+    @AppStorage("isLogged") var isLogged : Bool = false
+    @AppStorage("signUp") var signUp : Bool = false
+    
     var body: some View {
         ZStack {
             
@@ -31,12 +34,14 @@ struct SignInView: View {
                 
                 //USERNAME INPUT
                 GroupBox {
-                    TextField("Nome de usuário", text: $username)
+                    TextField("Seu e-mail", text: $username)
+                        .keyboardType(.emailAddress)
                 }
                 
                 //PASSWORD INPUT
                 GroupBox {
                     SecureField("Senha", text: $password)
+                        .keyboardType(.default)
                 }
                 
                 
@@ -54,6 +59,8 @@ struct SignInView: View {
                     if username == "" {
                         self.haveErrors = true
                         self.errorLabel = "Ops... não encontramos um usuário com esta combinação"
+                    } else {
+                        self.isLogged = true
                     }
                 }
                 
@@ -88,8 +95,9 @@ struct SignInView: View {
                     Text("Novo usuário?")
                         .fontWeight(.light)
                     
-                    Text("Cadastre-se")
-                        .fontWeight(.semibold)
+                    Button("Cadastre-se", action: {
+                        signUp = true
+                    })
                 }
             }
             .padding(.horizontal, 30)
