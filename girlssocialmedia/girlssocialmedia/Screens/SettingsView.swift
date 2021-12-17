@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @AppStorage("isLogged") var isLogged : Bool = true
+    @AppStorage("currentView") var currentView = 2
     
     var body: some View {
         NavigationView {
@@ -55,7 +55,7 @@ struct SettingsView: View {
                     .cornerRadius(10)
                     .padding(.vertical)
                     .onTapGesture {
-                        self.isLogged = false
+                        self.currentView = 0
                     }
                 }
                 .navigationBarTitle("Ajustes")

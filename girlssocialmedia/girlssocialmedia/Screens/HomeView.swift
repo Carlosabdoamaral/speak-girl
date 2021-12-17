@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -26,7 +27,10 @@ struct HomeView: View {
                 .padding(.horizontal)
             }
             .navigationTitle("Menu")
-            .navigationBarItems(trailing: HStack {
+            .navigationBarItems(
+                leading: Image(systemName: "bell"),
+                
+                trailing: HStack {
                 NavigationLink(destination: ChatListView()) {
                     Image(systemName: "paperplane.fill")
                 }

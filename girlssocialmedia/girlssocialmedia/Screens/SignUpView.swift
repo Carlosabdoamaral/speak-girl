@@ -30,6 +30,8 @@ struct SignUpView: View {
     @State var emailErrorLabel : String = ""
     @State var passwordErrorLabel : String = ""
     
+    @AppStorage("currentView") var currentView : Int = 1
+    
     //FUNCTIONS
     func validateInputs() {
         
@@ -151,22 +153,32 @@ struct SignUpView: View {
                             }
                         } else {}
                     }
-                }
-                
-                Spacer()
-                
-                Section {
+                    
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(Color.black.opacity(0))
                         HStack {
                             Text("Cadastrar-se")
-                                .foregroundColor(Color("ColorWine"))
                                 .font(.headline)
                         }
                     }
                     .frame(height: 50)
                     .onTapGesture {validateInputs()}
                 }
+                
+                Spacer()
+                
+                Section {
+                    HStack {
+                        Text("Já possui uma conta?")
+                        Text("Entrar")
+                            .fontWeight(.bold)
+                    }
+                    .onTapGesture {
+                        self.currentView = 0
+                    }
+                }
+                .padding(.vertical)
             }
             Spacer()
         }

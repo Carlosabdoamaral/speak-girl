@@ -15,8 +15,7 @@ struct SignInView: View {
     @State var errorLabel : String = ""
     //Ops... não encontramos um usuário com esta combinação
     
-    @AppStorage("isLogged") var isLogged : Bool = false
-    @AppStorage("signUp") var signUp : Bool = false
+    @AppStorage("currentView") var currentView : Int = 1
     
     var body: some View {
         ZStack {
@@ -60,7 +59,7 @@ struct SignInView: View {
                         self.haveErrors = true
                         self.errorLabel = "Ops... não encontramos um usuário com esta combinação"
                     } else {
-                        self.isLogged = true
+                        self.currentView = 3
                     }
                 }
                 
@@ -96,7 +95,7 @@ struct SignInView: View {
                         .fontWeight(.light)
                     
                     Button("Cadastre-se", action: {
-                        signUp = true
+                        self.currentView = 1
                     })
                 }
             }

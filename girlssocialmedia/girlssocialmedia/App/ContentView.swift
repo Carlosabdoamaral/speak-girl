@@ -10,8 +10,18 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("isLogged") var isLogged : Bool = false
     
+    // 0 - Login
+    // 1 - Cadastro
+    // 2,3,4,5... - Menu
+    @AppStorage("currentView") var currentView : Int = 0
+    
     var body: some View {
-        if isLogged {
+        
+        if currentView == 0 {
+            SignInView()
+        } else if currentView == 1 {
+            SignUpView()
+        } else {
             TabView() {
                 HomeView()
                     .tabItem {
@@ -23,6 +33,12 @@ struct ContentView: View {
                     .tabItem {
                         Image(systemName: "plus")
                         Text("Criar")
+                    }
+                
+                EmergencyView()
+                    .tabItem {
+                        Image(systemName: "phone")
+                        Text("Emergência")
                     }
                 
                 CommunityListView()
@@ -38,8 +54,6 @@ struct ContentView: View {
                     }
                 
             }
-        } else {
-            SignInView()
         }
 
     }
