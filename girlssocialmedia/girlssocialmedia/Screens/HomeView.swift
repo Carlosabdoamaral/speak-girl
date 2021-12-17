@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var isShowingNotification : Bool = false
 
     var body: some View {
         NavigationView {
@@ -28,13 +29,22 @@ struct HomeView: View {
             }
             .navigationTitle("Menu")
             .navigationBarItems(
-                leading: Image(systemName: "bell"),
+                leading:
+                    Image(systemName: "bell")
+                    .onTapGesture {
+                        self.isShowingNotification = true
+                    }
+                    .sheet(isPresented: $isShowingNotification) {
+                        NotificationListView()
+                    },
                 
-                trailing: HStack {
-                NavigationLink(destination: ChatListView()) {
-                    Image(systemName: "paperplane.fill")
-                }
-            })
+                trailing:
+                    HStack {
+                        NavigationLink(destination: ChatListView()) {
+                            Image(systemName: "paperplane.fill")
+                        }
+                    }
+            )
         }
     }
 }

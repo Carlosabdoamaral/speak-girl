@@ -34,7 +34,7 @@ struct ContentView: View {
                         Image(systemName: "plus")
                         Text("Criar")
                     }
-                
+
                 EmergencyView()
                     .tabItem {
                         Image(systemName: "phone")

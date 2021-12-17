@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("currentView") var currentView = 2
-    
+    @AppStorage("teste") var teste : Bool = true
     var body: some View {
         NavigationView {
             ZStack {
@@ -38,6 +38,12 @@ struct SettingsView: View {
                                 
                                 Spacer()
                             }
+                        }
+                    }
+                    
+                    GroupBox {
+                        Toggle(isOn: $teste) {
+                            Text("Teste")
                         }
                     }
                     

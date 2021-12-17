@@ -13,15 +13,17 @@ struct FeedPostView: View {
     var body: some View {
         NavigationLink(destination: PostDetailsView()){
             HStack {
-                ZStack {
-                    Circle()
-                    Image(systemName: "sparkles")
-                        .resizable()
-                        .scaledToFit()
-                        .foregroundColor(Color("ColorWine"))
-                        .padding()
+                NavigationLink(destination: ProfilePublicView()) {
+                    ZStack {
+                        Circle()
+                        Image(systemName: "sparkles")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(Color("ColorWine"))
+                            .padding()
+                    }
+                    .frame(width: 60, height: 60)
                 }
-                .frame(width: 60, height: 60)
                 
                 VStack {
                     
