@@ -9,6 +9,13 @@ import SwiftUI
 
 struct FeedPostView: View {
     @State private var liked : Bool = false
+    @State var isShowingReactions : Bool = false
+    
+    func share() {
+        guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+        let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+    }
     
     var body: some View {
         NavigationLink(destination: PostDetailsView()){
@@ -47,16 +54,24 @@ struct FeedPostView: View {
                                 .onTapGesture {
                                     self.liked = false
                                 }
-                            
-                        } else {
-                            Image(systemName: "heart")
-                                .onTapGesture {
-                                    self.liked = true
-                                }
+                        }
+                        else {
+                            Button {
+                                self.liked = true
+                                self.isShowingReactions = true
+                            } label: {
+                                Image(systemName: "heart")
+                            }
+                            .sheet(isPresented: $isShowingReactions) {
+                                ReactionsView()
+                            }
                         }
                         Image(systemName: "text.bubble")
                         Spacer()
-                        Image(systemName: "square.and.arrow.up")
+                        
+                        Button(action: share) {
+                            Image(systemName: "square.and.arrow.up")
+                        }
                     }
                     .font(.headline)
                     .padding(.top, 1)

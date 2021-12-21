@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9828566D27660DCD00CB6101 /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828566C27660DCD00CB6101 /* PostDetailsView.swift */; };
 		9828566F276611C800CB6101 /* CommunityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828566E276611C800CB6101 /* CommunityListView.swift */; };
+		983392E8276EC200003D3897 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983392E7276EC200003D3897 /* UserController.swift */; };
+		9845C381276D61840048D498 /* ReactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9845C380276D61840048D498 /* ReactionsView.swift */; };
 		98D015B42765159600C5A25D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D015B32765159600C5A25D /* HomeView.swift */; };
 		98D015B62765169A00C5A25D /* FeedPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D015B52765169A00C5A25D /* FeedPostView.swift */; };
 		98D015B827651DA000C5A25D /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D015B727651DA000C5A25D /* NewPostView.swift */; };
@@ -95,6 +97,8 @@
 /* Begin PBXFileReference section */
 		9828566C27660DCD00CB6101 /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
 		9828566E276611C800CB6101 /* CommunityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityListView.swift; sourceTree = "<group>"; };
+		983392E7276EC200003D3897 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		9845C380276D61840048D498 /* ReactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsView.swift; sourceTree = "<group>"; };
 		98D015B32765159600C5A25D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		98D015B52765169A00C5A25D /* FeedPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostView.swift; sourceTree = "<group>"; };
 		98D015B727651DA000C5A25D /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
@@ -158,6 +162,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		983392E6276EC1EF003D3897 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				983392E7276EC200003D3897 /* UserController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		98E6ED7C275981E7005A8B2C = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				98F9FC75276430960021E030 /* Info.plist */,
+				983392E6276EC1EF003D3897 /* Controller */,
 				98E6EDC527598302005A8B2C /* Data */,
 				98E6EDC4275982FD005A8B2C /* Models */,
 				98E6EDC3275982F9005A8B2C /* Components */,
@@ -264,6 +277,7 @@
 				98F7D67F276C1496004C726D /* EmergencyView.swift */,
 				98D0D8EC276CCCBB00C552A5 /* NotificationListView.swift */,
 				98D0D8F0276CD17900C552A5 /* ProfilePublicView.swift */,
+				9845C380276D61840048D498 /* ReactionsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -432,6 +446,7 @@
 				98F7D680276C1496004C726D /* EmergencyView.swift in Sources */,
 				98E6EDD027598561005A8B2C /* PostModel.swift in Sources */,
 				98D015BE27653D2000C5A25D /* ChatListView.swift in Sources */,
+				9845C381276D61840048D498 /* ReactionsView.swift in Sources */,
 				98D015B62765169A00C5A25D /* FeedPostView.swift in Sources */,
 				98D015C027653E0F00C5A25D /* ProfileNavLink.swift in Sources */,
 				98F9FC77276433600021E030 /* SignInView.swift in Sources */,
@@ -445,6 +460,7 @@
 				98D015C627654B4400C5A25D /* ChatAddContactView.swift in Sources */,
 				98F9FC79276447E10021E030 /* SignUpView.swift in Sources */,
 				98E6EDCE2759845A005A8B2C /* UserModel.swift in Sources */,
+				983392E8276EC200003D3897 /* UserController.swift in Sources */,
 				98D0D8F1276CD17900C552A5 /* ProfilePublicView.swift in Sources */,
 				98D015C22765429700C5A25D /* ChatView.swift in Sources */,
 				98D015BC2765356700C5A25D /* ProfilePrivateView.swift in Sources */,

@@ -32,8 +32,12 @@ struct ProfilePrivateView: View {
             }
         }
         .navigationBarItems(trailing: HStack{
-            Text("Editar")
-                .foregroundColor(Color.blue)
+            Button {
+                DeleteUser()
+            } label: {
+                Text("Deletar conta")
+                    .foregroundColor(Color.red)
+            }
         })
     }
 }

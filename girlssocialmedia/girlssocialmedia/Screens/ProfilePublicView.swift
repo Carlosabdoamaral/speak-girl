@@ -11,17 +11,14 @@ struct ProfilePublicView: View {
     var body: some View {
         ZStack {
             VStack {
-                Color("ColorWine").edgesIgnoringSafeArea(.all)
-                    .frame(height: 200)
-                    .padding(0)
                 Color.white.edgesIgnoringSafeArea(.all)
+                    .frame(height: 100)
+                    .padding(0)
+                Color("ColorWine").edgesIgnoringSafeArea(.all)
                     .padding(0)
             }
             
             VStack {
-                
-                Text("Perfil")
-                    .padding(50)
                 VStack {
                     ZStack {
                         Circle()
@@ -51,10 +48,13 @@ struct ProfilePublicView: View {
                 .cornerRadius(15)
                 .shadow(color: Color.black.opacity(0.6), radius: 10, x: 0, y: 0)
                 
-                
+                ScrollView(.vertical) {
+                    
+                }
                 
                 Spacer()
             }
+            .padding(.horizontal)
         }
     }
 }

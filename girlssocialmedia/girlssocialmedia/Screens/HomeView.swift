@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var isShowingNotification : Bool = false
-
+    
     var body: some View {
         NavigationView {
             ZStack {
